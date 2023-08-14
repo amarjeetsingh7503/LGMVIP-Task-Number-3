@@ -80,6 +80,10 @@ h1{
     .container {
         padding: 5px;
     }
+    
+    .heading{
+        font-size: 15px;
+    }
 
     .input, .type, .output {
         padding: 10px;
