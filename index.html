@@ -19,50 +19,54 @@
             <form action="" id="form">
                 <div class="f">
                     <label for="name">Name</label>
-                    <input type="text" class="type" placeholder="Enter Name" required>
+                    <input type="text" class="type" id="name" placeholder="Enter Name" required>
                 </div>
                 <div class="f">
                     <label for="mail">Email</label>
-                    <input type="email" class="type" placeholder="abc@email.com" required>
+                    <input type="email" class="type" id="email" placeholder="abc@email.com" required>
                 </div>
                 <div class="f">
                     <label for="phone">Phone Number</label>
-                    <input type="text" class="type" placeholder="Enter Number" required>
+                    <input type="text" class="type" id="phone" placeholder="Enter Number" required>
+                </div>
+                <div class="f">
+                    <label for="phone">Website</label>
+                    <input type="url" class="type" id="website" placeholder="Enter Website Link" required>
                 </div>
                 <div class="f1">
                     <label for="gender">Gender</label>
                     <div class="c">
                         <div class="c1">
-                            <input type="radio" name="a"><label for="male">Male</label>
+                            <input type="radio" class="r" id="male" name="a"><label for="male"> Male</label>
                         </div>
                         <div class="c1">
-                            <input type="radio" name="a"><label for="female">Female</label>
+                            <input type="radio" class="r" id="female" name="a"><label for="female"> Female</label>
                         </div>
                         <div class="c1">
-                            <input type="radio" name="a"><label for="others">Others</label>
+                            <input type="radio" class="r" id="others" name="a"><label for="others"> Others</label>
                         </div>
                     </div>
                 </div>
                 <div class="f">
                     <label for="image">Image</label>
-                    <input type="url" class="type" placeholder="Enter Image URL">
+                    <input type="url" id="image" class="type" placeholder="Enter Image URL">
                 </div>
                 <div class="f1">
                     <label for="skills">Skills</label>
                     <div class="c">
                         <div class="c1">
-                            <input type="checkbox"><label for="html">HTML</label>
+                            <input type="checkbox" id="html"><label for="html"> HTML</label>
                         </div>
                         <div class="c1">
-                            <input type="checkbox"><label for="css">CSS</label>
+                            <input type="checkbox" id="css"><label for="css"> CSS</label>
                         </div>
                         <div class="c1">
-                            <input type="checkbox"><label for="js">JavaScript</label>
+                            <input type="checkbox" id="js"><label for="js"> JavaScript</label>
                         </div>
                     </div>
                 </div>
                 <div class="f2">
-                    <input type="submit" style="height: 30px; width: 100px; background-color: navy; color: aliceblue; font-family: 'Bricolage Grotesque', sans-serif;">
+                    <input type="submit" id="button" style="height: 30px; width: 100px; background-color: navy; color: aliceblue; font-family: 'Bricolage Grotesque', sans-serif;">
                 </div>
             </form>
         </div>
@@ -71,5 +75,6 @@
 
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
