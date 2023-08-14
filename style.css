@@ -8,6 +8,7 @@ body{
 }
 
 h1{
+    font-size: 10px;
     font-family: 'Bricolage Grotesque', sans-serif;
 }
 
@@ -44,6 +45,8 @@ h1{
 
 .c{
     width: 50%;
+    display: flex;
+    padding: 5px;
 }
 
 .c1{
@@ -73,6 +76,7 @@ h1{
 }
 
 @media (max-width: 650px) {
+
     .container {
         padding: 5px;
     }
@@ -85,5 +89,10 @@ h1{
 
     .separate {
         margin: 10px 0;
+    }
+
+    .c{
+        width: 60%;
+        display: flex;
     }
 }
