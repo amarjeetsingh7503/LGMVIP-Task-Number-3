@@ -25,20 +25,20 @@ myForm.addEventListener("submit", (e) =>{
    std_result.appendChild(e_row);
    var std_row1 = document.getElementById("std_row");
 
-   //Data of Enrolled Student
+   
    var e_data = document.createElement("div");
    e_data.classList.add("e_data", "coloumn");
    e_data.id = "e_std_data";
    std_row1.appendChild(e_data);
    var e_std_data = document.getElementById("e_std_data");
 
-   //Enrolled Student Name
+    
    const e_name = document.createElement("p");
    e_name.id="e_name";
    e_name.innerText = document.getElementById("name").value;
    e_std_data.appendChild(e_name);
 
-   //Enrolled Student Gender
+    
    const e_gender = document.createElement("p");
    e_gender.id="e_gender";
    var e_radio = document.getElementsByName("gender");
@@ -49,13 +49,13 @@ myForm.addEventListener("submit", (e) =>{
    }
    e_std_data.appendChild(e_gender);
 
-   //Enrolled Student Email
+
    const e_email = document.createElement("p");
    e_email.id="e_email";
    e_email.innerText = document.getElementById("email").value;
    e_std_data.appendChild(e_email);
 
-   //Enrolled Student Website
+   
    const e_website = document.createElement("p");
    e_website.id="e_website";
    e_std_data.appendChild(e_website);
@@ -63,7 +63,7 @@ myForm.addEventListener("submit", (e) =>{
    e_link.href = document.getElementById("website").value;
    e_link.innerText = document.getElementById("website").value;
    e_website.appendChild(e_link);
-   //Enrolled Student Skills
+   
    const e_skills = document.createElement("p");
    e_skills.id="e_skills";
    e_std_data.appendChild(e_skills);
@@ -76,7 +76,7 @@ myForm.addEventListener("submit", (e) =>{
        }
    }
 
-   //Image of Student
+
    var e_image = document.createElement("div");
    e_image.classList.add("e_image", "coloumn");
    e_image.id = "e_std_image";
