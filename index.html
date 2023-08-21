@@ -2,79 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RegistrationForm</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
 </head>
-<body>
-    <div class="heading">
-        <h1>REGISTRATION FORM</h1>
-    </div>    
-    <hr>
-    <div class="container">
-        <div class="input">
-            <form action="" id="form">
-                <div class="f">
-                    <label for="name">Name</label>
-                    <input type="text" class="type" id="name" placeholder="Enter Name" required>
-                </div>
-                <div class="f">
-                    <label for="mail">Email</label>
-                    <input type="email" class="type" id="email" placeholder="abc@email.com" required>
-                </div>
-                <div class="f">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" maxlength="10" class="type" id="phone" placeholder="Enter Number" required>
-                </div>
-                <div class="f">
-                    <label for="phone">Website</label>
-                    <input type="url" class="type" id="website" placeholder="Enter Website Link" required>
-                </div>
-                <div class="f1">
-                    <label for="gender">Gender</label>
-                    <div class="c">
-                        <div class="c1">
-                            <input type="radio" class="r" id="male" name="a"><label for="male"> Male</label>
+<body style="background-color: #fff3da;">
+    <div class="navigation">
+        <h1>Student Enrollment Form</h1>
+        <a href="../../index.html" style="color: aliceblue;">HOME</a>
+    </div>
+
+    <div class="container row">    
+        <div class="form coloumn">
+            <form id="myForm">
+                <span class="text_field">
+                    <label for="name" class="form-label">Name</label><input class="form-control" type="text" name="name" id="name" required/><br>
+                    <label for="email" class="form-label">Email</label><input class="form-control" type="email" name="email" id="email" required/><br>
+                    <label for="website" class="form-label">Website</label><input class="form-control" type="text" name="website" id="website" required/><br>
+                </span>
+                
+                <label for="img" class="form-label">Upload Image</label><input class="form-control-file" type="file" name="img" id="img" required/><br>
+                <label for="gender" class="form-label">Gender</label>
+                    <span class="radio-container">
+                        <div class="male">
+                                <input class="form-check-input" type="radio" name="gender" id="Male" value="Male" required/>
+                                <label class="form-check-label" for="Male">Male</label>
                         </div>
-                        <div class="c1">
-                            <input type="radio" class="r" id="female" name="a"><label for="female"> Female</label>
+                        <div class="female">
+                                <input class="form-check-input" type="radio" name="gender" id="Female" value="Female" required/>
+                                <label class="form-check-label" for="Female">Female</label>
                         </div>
-                        <div class="c1">
-                            <input type="radio" class="r" id="others" name="a"><label for="others"> Others</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="f">
-                    <label for="image">Image</label>
-                    <input type="url" id="image" class="type" placeholder="Enter Image URL">
-                </div>
-                <div class="f1">
-                    <label for="skills">Skills</label>
-                    <div class="c">
-                        <div class="c1">
-                            <input type="checkbox" id="html"><label for="html"> HTML</label>
-                        </div>
-                        <div class="c1">
-                            <input type="checkbox" id="css"><label for="css"> CSS</label>
-                        </div>
-                        <div class="c1">
-                            <input type="checkbox" id="js"><label for="js"> JavaScript</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="f2">
-                    <input type="submit" id="button" style="height: 30px; width: 100px; background-color: navy; color: aliceblue; font-family: 'Bricolage Grotesque', sans-serif;">
-                </div>
+                    </span><br/>
+                <label for="skills" class="form-label">Skills</label>
+                    <span class="checkbox-container">
+                        <input class="form-check-input" type="checkbox" name="skills" id="HTML" value="HTML"/><label class="form-check-label" for="HTML">HTML</label>
+                        <input class="form-check-input" type="checkbox" name="skills" id="CSS" value="CSS"/><label for="CSS">CSS</label>
+                        <input class="form-check-input" type="checkbox" name="skills" id="JavaScript" value="JavaScript"/><label for="JavaScript">JavaScript</label><br>
+                    </span>
+                    <br/>
+                <span class="btn">
+                    <input class="btn btn-primary" type="submit" value="Enroll Student" />
+                    <input class="btn btn-danger" type="reset" value="Clear" />
+                </span>
             </form>
         </div>
-        <hr class="seperate">
-        <div class="output">
+
+        <div class="Enrolled_Students coloumn" id="std_result">
+                
+                <h2>Enrolled Students</h2>
+
+                <div class="result row" id="t_row">
+
+                    <div class="data coloumn">
+                        <p>Description</p>
+                    </div>
+
+                    <div class="image coloumn">
+                        <p>Image</p>
+                    </div>
+
+                </div>
 
         </div>
+        
     </div>
-    <script src="./script.js"></script>
+    
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

@@ -1,102 +1,174 @@
-*{
-    margin: 0;
-    padding: 0;
+.navigation{
+    background-color: #071952;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
 
-body{
-    background-color: #FCF8E8;
+body .container{
+    margin: auto;
 }
 
-h1{
-    font-size: 10px;
-    font-family: 'Bricolage Grotesque', sans-serif;
+.row{
+    display: flex;
 }
 
-.heading{
-    background-color: #2D4059;
-    color: whitesmoke;
-    padding: 25px;
+.coloumn{
+    flex: 50%;
+
+}
+
+.form{
+    padding: 4em;
+    text-align: left;
+    border-right: 0.1rem solid #071952;
+    height: 100vh;
+}
+
+.text_field input{
+    display: inline-flex;
+    width: 40%;
+}
+
+
+label{
+    display: inline-flex;
+    margin: auto;
+    width: 30%;
+    padding: 0.7em;
+}
+
+.radio-container{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.female{
+    margin-top: -20%;
+}
+
+.radio-container input{
+    margin-top: 1em;
+}
+
+.checkbox-container input{
+    margin-top: 1em;
+}
+
+.checkbox-container label{
+    width: auto;
+}
+
+
+.btn .btn-danger{
+    margin-left: 1em;
+}
+
+.Enrolled_Students{
     text-align: center;
 }
 
-.container{
-    display: flex;
-    height: 90vh;
+.result.row{
+    width: 90%;
+    display: none;
 }
 
-.input{
-    width: 50%;
-    padding: 20px;
+.result .data.coloumn{
+    border: 1px solid grey;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    background-color: #071952;
+    color: white;
+    font-weight: bold;
+    width: 70%;
+    height: 2em;
+    flex: inherit;
+} 
+
+.result .image.coloumn{
+    border: 1px solid grey;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    background-color: #071952;
+    color: white;
+    font-weight: bold;
+    width: 30%;
+    flex: inherit;
+    height: 2em;
 }
 
-.f{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    font-family: 'Bricolage Grotesque', sans-serif;
+.result p{
+    margin: auto;
 }
 
-.f1{
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    font-family: 'Bricolage Grotesque', sans-serif;
+.enroll.row{
+    display: inline-flex;
+    width: 90%;
 }
 
-.c{
-    width: 50%;
-    display: flex;
-    padding: 5px;
+.enroll .e_data.coloumn{
+    border: 1px solid grey;
+    text-align: left;
+    align-items: center;
+    align-content: center;
+    color: black;
+    width: 70%;
+    height: 9em;
+    flex: inherit;
+} 
+
+.enroll .e_image.coloumn{
+    border: 1px solid grey;
+    color: white;
+    width: 30%;
+    flex: inherit;
+    height: 9em;
 }
 
-.c1{
-    margin: 0px 5px;
+.enroll p{
+    margin: auto;
 }
 
-.f2{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.type{
-    width: 50%;
-    height: 30px;
-    border: 1px solid #35155D;
-}
-
-.output{
-    width: 50%;
-}
-
-.seperate{
-    background-color: darkblue;
-    width: 1px;
-    box-shadow: 0px 0px 10px 0px #2D4059;
+img{
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 650px) {
-
-    .container {
-        padding: 5px;
-    }
-    
-    .heading{
-        font-size: 15px;
+    .row {
+        flex-direction: column;
     }
 
-    .input, .type, .output {
-        padding: 10px;
-        font-size: 10px;
-        height: 1px;
+    .coloumn {
+        flex: 100%;
     }
 
-    .separate {
-        margin: 10px 0;
+    .form {
+        padding: 2em;
+        border-right: none;
+        height: auto;
     }
 
-    .c{
-        width: 60%;
-        display: flex;
+    .text_field input {
+        width: 100%;
+    }
+
+    .radio-container .female {
+        margin-top: 0;
+    }
+
+    .btn .btn-danger {
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .result .data.coloumn,
+    .result .image.coloumn,
+    .enroll .e_data.coloumn,
+    .enroll .e_image.coloumn {
+        width: 100%;
+        flex: 100%;
     }
 }
